@@ -1,0 +1,36 @@
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    transition: all 0.3s ease;
+  }
+  
+  .card {
+    position: relative;
+    width: 24%;
+    background-color: lightblue;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: width 0.3s ease;
+    height: 200px; /* Added height */
+  }
+  
+  .hidden-card {
+    width: 24%;
+    background-color: lightcoral;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    height: 200px; /* Same height as other cards */
+    transition: all 0.3s ease;
+  }
+  
+  .card-container.expanded .card,
+  .card-container.expanded .hidden-card {
+    width: 19.2%;
+  }
+  
+  .card-content,
+  .hidden-card-content {
+    height: 100%; /* Ensure content fills the card */
+  }
+  
